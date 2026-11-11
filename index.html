@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preety Jaiswal — AI for Sustainability</title>
+<meta name="description" content="Portfolio of Preety Jaiswal — M.Tech (AI for Sustainability), IIT Kanpur. Climate modeling, spatio-temporal ML and multi-agent AI systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="ready">
+
+<header id="nav" class="scrolled">
+  <a href="#top" class="logo">Preety Jaiswal</a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="btn small" href="assets/Preety_Jaiswal_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <p class="eyebrow">M.Tech · AI for Sustainability · IIT Kanpur</p>
+    <h1>Preety Jaiswal</h1>
+    <p class="lede">M.Tech student in AI for Sustainability at IIT Kanpur with a background in Statistics. I work on machine learning for climate and geospatial data, and on LLM-based agent systems.</p>
+    <div class="cta">
+      <a class="btn" href="#projects">View projects</a>
+      <a class="btn ghost" href="assets/Preety_Jaiswal_Resume.pdf" target="_blank" rel="noopener">Download resume</a>
+    </div>
+    <div class="socials">
+      <a href="https://github.com/PreetyJaiswal175" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/preety-jaiswal-72a6a9235" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="mailto:preetyjaiswal0470@gmail.com">Email ↗</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <div class="about-grid">
+      <div >
+        <p>I am pursuing an M.Tech in <b>AI for Sustainability</b> at the Indian Institute of Technology Kanpur. I hold a B.Sc and an M.Sc in <b>Statistics</b> from the University of Allahabad.</p>
+        <p>My work combines statistical methods with machine learning. My thesis analyses long-term temperature and radiation trends over India, and my projects cover wildfire risk prediction, cyclone track forecasting, recommendation systems and multi-agent research tools built with LangGraph.</p>
+        <p>I work mainly in Python with PyTorch, Scikit-Learn, XGBoost and the LangChain ecosystem.</p>
+      </div>
+      <div><h3 class="col-h">Education</h3><ol class="timeline">
+        <li><time>2025 — Present</time><h3>M.Tech, AI for Sustainability</h3><p>Indian Institute of Technology, Kanpur</p></li>
+        <li><time>2023 — 2025</time><h3>M.Sc, Statistics</h3><p>University of Allahabad, Prayagraj</p></li>
+        <li><time>2020 — 2023</time><h3>B.Sc, Statistics</h3><p>University of Allahabad, Prayagraj</p></li>
+        <li><time>2020</time><h3>CBSE, Class XII</h3><p>St. Paul Public School, U.P.</p></li>
+        <li><time>2018</time><h3>UP Board, Class X</h3><p>Prestige Inter College, U.P.</p></li>
+      </ol></div>
+    </div>
+  </div>
+</section>
+
+<section id="research" class="alt">
+  <div class="wrap">
+    <h2>Research Experience</h2>
+    <article class="card">
+      <div class="p-top"><span class="p-num">M.Tech Thesis · Ongoing</span><span class="p-date">Guide: Dr. Sarosh Alam Ghausi</span></div>
+      <h3 class="r-title">Physics-Guided Climate Modeling and Spatio-Temporal Analytics</h3>
+      <p class="r-desc">The thesis examines why India's long-term warming rate is about half the global average, by comparing temperature and surface-radiation trends on rainy and non-rainy days.</p>
+      <ul>
+        <li>Built a data pipeline combining 70+ years (1951–2021) of IMD gridded observations across 4,434 grid points with ERA5 reanalysis and NASA CERES radiative-flux data at 1° × 1° resolution.</li>
+        <li>Computed temperature anomalies using 11-day moving climatological baselines and estimated trends with OLS regression and Mann-Kendall analysis.</li>
+        <li>Evaluated a physics-constrained thermodynamic maximum power model that reconstructs surface temperature with R² &gt; 0.93 against station observations.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="p-grid">
+
+      <article class="project">
+        <div class="p-top"><span class="p-num">01</span></div>
+        <h3>ResearchMind</h3>
+        <p class="p-sub">Multi-agent deep research system</p>
+        <p>LangGraph/LangChain agents orchestrating multi-query search, parallel source extraction, LLM synthesis, critic evaluation and automatic self-correction of low-quality reports. Async retrieval with TTL caching and Gemini/OpenAI fallback routing.</p>
+        <div class="chips"><i>LangGraph</i><i>LangChain</i><i>asyncio</i><i>Gemini</i><i>OpenAI</i></div>
+        <a href="https://github.com/PreetyJaiswal175/AI-deep-research-agent" target="_blank" rel="noopener">View on GitHub <b>→</b></a>
+      </article>
+
+      <article class="project">
+        <div class="p-top"><span class="p-num">02</span></div>
+        <h3>Forest Fire Early-Warning</h3>
+        <p class="p-sub">Pan-India wildfire risk prediction</p>
+        <p>Monthly fire-risk forecasting at 0.1° (~11 km) resolution, fusing 13 years of ERA5, NDVI and VIIRS data. Benchmarked ConvLSTM2D, FT-Transformer, XGBoost and Random Forest with calibration and SHAP driver analysis.</p>
+        <div class="metrics"><div><b>0.958</b>ROC-AUC</div><div><b>0.899</b>PR-AUC</div><div><b>0.834</b>F1</div></div>
+        <div class="chips"><i>ConvLSTM</i><i>XGBoost</i><i>SHAP</i><i>ERA5</i></div>
+        <a href="https://github.com/PreetyJaiswal175/Fire-Prediction" target="_blank" rel="noopener">View on GitHub <b>→</b></a>
+      </article>
+
+      <article class="project">
+        <div class="p-top"><span class="p-num">03</span></div>
+        <h3>Hybrid Movie Recommender</h3>
+        <p class="p-sub">Hybrid semantic recommendation engine</p>
+        <p>Sentence-Transformers encode 55,000+ films into 384-D embeddings; cosine similarity blended with Bayesian popularity scoring. Evaluated with Precision@K, NDCG@K and MRR against a CountVectorizer baseline, served via Streamlit.</p>
+        <div class="metrics"><div><b>55K+</b>films</div><div><b>384-D</b>embeddings</div></div>
+        <div class="chips"><i>Sentence-Transformers</i><i>Streamlit</i><i>NLP</i></div>
+        <a href="https://github.com/PreetyJaiswal175/AI-Movie-Recommendation" target="_blank" rel="noopener">View on GitHub <b>→</b></a>
+      </article>
+
+      <article class="project">
+        <div class="p-top"><span class="p-num">04</span></div>
+        <h3>Cyclone Track Prediction</h3>
+        <p class="p-sub">Multi-horizon forecasting, +6h to +72h</p>
+        <p>45+ years of NOAA IBTrACS data and 149 engineered meteorological, kinematic and geospatial features. Seven models benchmarked on a leakage-free chronological split, cutting error ~40% versus Ridge.</p>
+        <div class="metrics"><div><b>11.09 km</b>RMSE @ 6h</div><div><b>26.30 km</b>RMSE @ 12h</div></div>
+        <div class="chips"><i>Time series</i><i>Feature engineering</i><i>IBTrACS</i></div>
+        <a href="https://github.com/PreetyJaiswal175/Cyclone_Track_Prediction" target="_blank" rel="noopener">View on GitHub <b>→</b></a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="alt">
+  <div class="wrap">
+    <h2>Technical Skills</h2>
+    <dl class="s-list">
+      <div class="s-row"><dt>Programming Languages</dt><dd>Python, SQL, R</dd></div>
+      <div class="s-row"><dt>Machine Learning &amp; Deep Learning</dt><dd>PyTorch, TensorFlow, Scikit-Learn, XGBoost, LightGBM, CNN, RNN, LSTM, Transformers</dd></div>
+      <div class="s-row"><dt>Generative AI &amp; Agents</dt><dd>LangChain, LangGraph, AI Agents, RAG, Sentence-Transformers, LLM Fine-Tuning</dd></div>
+      <div class="s-row"><dt>Data Science &amp; Libraries</dt><dd>NumPy, Pandas, Matplotlib, Seaborn, GeoPandas, Feature Engineering, Time-Series Modeling</dd></div>
+      <div class="s-row"><dt>Tools &amp; Platforms</dt><dd>Streamlit, Docker, GitHub, Linux, LaTeX, Jupyter Notebook, Google Colab, VS Code</dd></div>
+    </dl>
+
+    <h3 class="sub-h">Key Coursework</h3>
+    <dl class="s-list">
+      <div class="s-row"><dt>AI/ML &amp; Data Mining</dt><dd>Fundamentals of Data Science and Machine Learning, Knowledge Discovery &amp; Data Mining, Regression Analysis, Statistical Computing (Python/R)</dd></div>
+      <div class="s-row"><dt>Statistical &amp; Mathematical Foundations</dt><dd>Multivariate Analysis, Measure &amp; Probability Theory, Stochastic Processes, Estimation Theory, Hypothesis Testing</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <h2>Contact</h2>
+    <p class="c-line">For opportunities or collaboration, please reach me by email or LinkedIn.</p>
+    <a class="mail" href="mailto:preetyjaiswal0470@gmail.com">preetyjaiswal0470@gmail.com</a>
+    <div class="cta">
+      <a class="btn" href="https://www.linkedin.com/in/preety-jaiswal-72a6a9235" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/PreetyJaiswal175" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn ghost" href="assets/Preety_Jaiswal_Resume.pdf" target="_blank" rel="noopener">Download resume</a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer><div class="wrap"><span>© 2026 Preety Jaiswal</span><span>IIT Kanpur · AI for Sustainability</span></div></footer>
+</body>
+</html>
